@@ -34,8 +34,8 @@
                 <div class="header_cont">
                     <!-- util menu -->
                     <ul class="util clear">
-                        <li><a href="./login.html">로그인</a></li>
-                        <li><a href="./join.html">회원가입</a></li>
+                        <li><a href="../member/login.html">로그인</a></li>
+                        <li><a href="../member/join.html">회원가입</a></li>
                     </ul>
                     <!-- top navigation -->
                     <nav>
@@ -53,7 +53,7 @@
                                 <a href="#" class="openAll2">고객센터</a>
                                 <div class="gnb_depth gnb_depth2_2">
                                     <ul class="submenu_list">
-                                        <li><a href="../board/notice_list.html">공지사항</a></li>
+                                        <li><a href="notice_list.html">공지사항</a></li>
                                         <li><a href="#">문의하기</a></li>
                                     </ul>
                                 </div>
@@ -88,108 +88,115 @@
         <!-- header e -->
         <!-- container s -->
         <div id="container">
-            <div class="location_area member">
+            <div class="location_area customer">
                 <div class="box_inner">
                     <h2 class="tit_page">TOURIST <span class="in">IN</span> TOUR</h2>
                     <p class="location">
-                        MEMBER <span class="path">/</span> 회원가입
+                        공지사항 <span class="path">/</span> 고객센터
                     </p>
                     <ul class="page_menu clear">
-                        <li><a href="#" class="on">회원가입</a></li>
+                        <li><a href="#" class="on">공지사항</a></li>
+                        <li><a href="#">문의하기</a></li>
                     </ul>
                 </div>
             </div>
             <div class="bodytext_area box_inner">
-                <form action="#" class="appForm" method="post">
+                <form action="#" class="minisrch_form">
                     <fieldset>
-                        <legend>회원가입 입력 양식</legend>
-                        <p class="info_pilsoo pilsoo_item">필수입력</p>
-                        <ul class="app_list">
-                            <!-- email -->
-                            <li class="clear">
-                                <label for="email_lbl" class="tit_lbl pilsoo_item">
-                                    이메일
-                                </label>
-                                <div class="app_content email_area">
-                                    <input type="text" class="w160" title="이메일 주소" id="email_lbl">
-                                    <span class="ico_space">@</span>
-                                    <input type="text" class="w160" title="이메일 제공업체">
-                                    <div class="select_common">
-                                        <select title="이메일 제공업체">
-                                            <option value="">직접입력</option>
-                                            <option value="naver">naver.com</option>
-                                            <option value="daum">daum.net</option>
-                                            <option value="gmail">gmail.com</option>
-                                            <option value="nate">nate.com</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- name -->
-                            <li class="clear">
-                                <label for="name_lbl" class="tit_lbl pilsoo_item">
-                                    이름
-                                </label>
-                                <div class="app_content name_area">
-                                    <input type="text" class="w100p" placeholder="이름을 입력하세요" id="name_lbl">
-                                </div>
-                            </li>
-                            <!-- password -->
-                            <li class="clear">
-                                <label for="pwd_lbl" class="tit_lbl pilsoo_item">
-                                    비밀번호
-                                </label>
-                                <div class="app_content pwd_area">
-                                    <input type="password" class="w100p" placeholder="비밀번호를 입력하세요" id="pwd_lbl">
-                                </div>
-                            </li>
-                            <!-- password check -->
-                            <li class="clear">
-                                <label for="pwd2_lbl" class="tit_lbl pilsoo_item">
-                                    비밀번호 확인
-                                </label>
-                                <div class="app_content pwd2_area">
-                                    <input type="password" class="w100p" placeholder="비밀번호 확인을 입력하세요" id="pwd2_lbl">
-                                </div>
-                            </li>
-                            <!-- phone -->
-                            <li class="clear">
-                                <label for="phone_lbl" class="tit_lbl pilsoo_item">
-                                    연락처
-                                </label>
-                                <div class="app_content phone_area">
-                                    <input type="tel" class="w100p" placeholder="휴대폰 '-' 없이 숫자만 입력하세요" id="phone_lbl">
-                                </div>
-                            </li>
-                            <!-- gender -->
-                            <li class="clear">
-                                <span class="tit_lbl">성별</span>
-                                <div class="app_content radio_area">
-                                    <input type="radio" class="css-radio" id="mmm_lbl" name="gender" value="남">
-                                    <label for="mmm_lbl">남</label>
-                                    <input type="radio" class="css-radio" id="www_lbl" name="gender" value="여">
-                                    <label for="www_lbl">여</label>
-                                </div>
-                            </li>
-                            <!-- info -->
-                            <li class="clear">
-                                <span class="tit_lbl">개인정보 활용동의</span>
-                                <div class="app_content checkbox_area">
-                                    <input type="checkbox" class="css-checkbox" name="agree" id="agree_lbl">
-                                    <label for="agree_lbl">동의함</label>
-                                </div>
-                            </li>
-                            <!-- Q&A -->
-                            <li class="clear">
-                                <label for="content_lbl" class="tit_lbl">문의내용</label>
-                                <div class="app_content">
-                                    <textarea id="content_lbl" class="w100p" placeholder="간단한 상담 요청 사항을 남겨주시면 보다 상세한 상담이 가능합니다. 전화 상담 희망시 기재 부탁드립니다."></textarea>
-                                </div>
-                            </li>
-                        </ul>
-                        <p class="btn_line"><a href="#" class="btn_basecolor">등록</a></p>
+                        <legend>검색</legend>
+                        <input type="text" class="tbox" title="검색어를 입력하세요" placeholder="검색어를 입력하세요">
+                        <a href="#" class="btn_srch">검색</a>
                     </fieldset>
                 </form>
+                <table class="bbsListTbl" summary="번호, 제목, 조회수, 작성일 등을 제공하는 표">
+                    <caption class="hdd">공지사항 목록</caption>
+                    <thead>
+                        <tr>
+                            <!-- 
+                                scope 속성
+                                    웹 접근성을 위해 사용하는 속성
+                                    테이블의 th, td 등의 해당 셀에게 열(col)인지 행(row)인지 여부를 알려주는 역할
+                             -->
+                            <th scope="col">번호</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">조회수</th>
+                            <th scope="col">작성일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td class="tit_notice"><a href="#">이번 휴가 제주갈까? 미션 투어(여행경비 50만원 지원)</a></td>
+                            <td>123</td>
+                            <td>2021-11-21</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="tit_notice"><a href="#">이번 휴가 제주갈까? 미션 투어(여행경비 50만원 지원)</a></td>
+                            <td>123</td>
+                            <td>2021-11-21</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="tit_notice"><a href="#">이번 휴가 제주갈까? 미션 투어(여행경비 50만원 지원)</a></td>
+                            <td>123</td>
+                            <td>2021-11-21</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="tit_notice"><a href="#">이번 휴가 제주갈까? 미션 투어(여행경비 50만원 지원)</a></td>
+                            <td>123</td>
+                            <td>2021-11-21</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="tit_notice"><a href="#">이번 휴가 제주갈까? 미션 투어(여행경비 50만원 지원)</a></td>
+                            <td>123</td>
+                            <td>2021-11-21</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="tit_notice"><a href="#">이번 휴가 제주갈까? 미션 투어(여행경비 50만원 지원)</a></td>
+                            <td>123</td>
+                            <td>2021-11-21</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="tit_notice"><a href="#">이번 휴가 제주갈까? 미션 투어(여행경비 50만원 지원)</a></td>
+                            <td>123</td>
+                            <td>2021-11-21</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="tit_notice"><a href="#">이번 휴가 제주갈까? 미션 투어(여행경비 50만원 지원)</a></td>
+                            <td>123</td>
+                            <td>2021-11-21</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="tit_notice"><a href="#">이번 휴가 제주갈까? 미션 투어(여행경비 50만원 지원)</a></td>
+                            <td>123</td>
+                            <td>2021-11-21</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="tit_notice"><a href="#">이번 휴가 제주갈까? 미션 투어(여행경비 50만원 지원)</a></td>
+                            <td>123</td>
+                            <td>2021-11-21</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <a href="#" class="firstpage pbtn"><img src="../images/btn_firstpage.png" alt="첫 페이지로 이동"></a>
+                    <a href="#" class="prevpage pbtn"><img src="../images/btn_prevpage.png" alt="이전 페이지로 이동"></a>
+                    <a href="#"><span class="currentPage pagenum">1</span></a>
+                    <a href="#"><span class="pagenum">2</span></a>
+                    <a href="#"><span class="pagenum">3</span></a>
+                    <a href="#"><span class="pagenum">4</span></a>
+                    <a href="#"><span class="pagenum">5</span></a>
+                    <a href="#" class="nextpage pbtn"><img src="../images/btn_nextpage.png" alt="다음 페이지로 이동"></a>
+                    <a href="#" class="lastpage pbtn"><img src="../images/btn_lastpage.png" alt="마지막 페이지로 이동"></a>
+                </div>
             </div>
         </div>
         <!-- container e -->
