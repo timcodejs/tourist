@@ -1563,6 +1563,18 @@ h1.loginTit > a > img {
     color: #fff !important;
     font-weight: bold;
   }
+  .btn_bbs {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    vertical-align: middle;
+    background-color: #384d75;
+    color: #fff !important;
+    font-weight: bold;
+  }
   /* sub page common m e */
   /* login.html m s */
   .login_wrap {
@@ -1685,5 +1697,79 @@ h1.loginTit > a > img {
     vertical-align: middle;
   }
   /* mypage.html m e */
+  /* notice_list.html m s */
+  .location_area.customer {
+    height: 260px;
+    background: url("../images/img_top2.jpg") no-repeat center bottom / cover;
+  }
+  .bbsListTbl {
+    width: 100%;
+    border-top: 2px solid #384d75;
+  }
+  .bbsListTbl th,
+  .bbsListTbl td {
+    padding: 10px;
+    box-sizing: border-box;
+    height: 45px;
+  }
+  .bbsListTbl th:nth-child(odd),
+  .bbsListTbl td:nth-child(odd) {
+    display: none;
+  }
+  .bbsListTbl th:nth-child(2) {
+    width: 70%;
+  }
+  .bbsListTbl th:nth-child(4) {
+    width: 30%;
+  }
+  .bbsListTbl td {
+    line-height: 1.3;
+    border-bottom: 1px solid #ccc;
+  }
+  /* notice_list.html m e */
+  /* notice_view.html m s */
+  .near_list {
+    display: none;
+  }
+  /* notice_view.html m e */
+  /* program.html m s */
+  .location_area.pakage {
+    height: 260px;
+    background: url("../images/img_top3.jpg") no-repeat center bottom / cover;
+  }
+  .bodytext_area .place_area {
+    padding: 33px 0 0;
+  }
+  .program_list {
+    padding: 0 20px;
+  }
+  .program_list li {
+    float: none;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    padding: 30px 0;
+  }
+  .program_list li:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .program_list li h3 {
+    padding: 20px 0 0;
+    text-align: center;
+  }
+  .program_list li .subttl {
+    padding: 15px 0 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  .program_list li .program_content p .subtxt {
+    display: inline;
+  }
+  .program_list li .btn_more {
+    display: none;
+  }
+  /* program.html m e */
 }
 /* mobile e */
