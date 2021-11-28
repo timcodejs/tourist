@@ -395,6 +395,9 @@ header > .header_area > h1 > a {
   display: inline-block;
   padding: 20px;
 }
+header .header_cont .closePop a {
+  font-size: 0;
+}
 
 #container {
   padding-bottom: 70px;
